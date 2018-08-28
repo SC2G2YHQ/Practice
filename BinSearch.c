@@ -13,7 +13,7 @@ int BinSerach_1(int target,int num[],int length)
 		if(num[mid]==target){
 			return mid;
 		}
-		if(num[mid]>target){
+		if(target>num[mid]){
 			left=mid+1;
 		}else{
 			right=mid;
@@ -32,7 +32,7 @@ int BinSerach_2(int target,int num[],int length){
 		mid=(left+right)/2;
 		if(num[mid]==target)
 			return mid;
-		if(num[mid]>target){
+		if(target>num[mid]){
 			left=mid+1;
 		}else{
 			right=mid-1;
